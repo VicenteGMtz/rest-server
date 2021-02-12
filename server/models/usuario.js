@@ -21,7 +21,6 @@ let usuarioEsquema = new Schema({
         type: String,
         unique: true,
         required: [true, 'El correo es requerido'],
-
     },
     password: {
         type: String,
@@ -36,7 +35,6 @@ let usuarioEsquema = new Schema({
         type: String,
         default: 'USER_ROLE',
         enum: rolesValidos
-
     },
     estado: {
         type: Boolean,
